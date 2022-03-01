@@ -1,0 +1,19 @@
+HTML part for removing the border of input 
+<form>
+  <p>Ordinary input field with box outline:</p>
+  <input type="text" placeholder="Enter Something">
+  <p>Input field without outline:</p>
+  <input type="text" class="no-outline" placeholder="Enter Something">
+</form>
+css part:
+input {
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+  border-bottom-style: groove;
+  background-color: #eee;
+}
+
+.no-outline:focus {
+  outline: none;
+}
